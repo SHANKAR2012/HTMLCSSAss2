@@ -50,7 +50,7 @@ body{
 }
 hr.line {
     color: rgba(0, 103, 179, 0.8);
-    margin-top: 30px;
+    margin-top: 300px;
     margin-bottom: 30px;
     
 }
@@ -165,54 +165,74 @@ nav li a{
 
 
 
-.div7{
-    display:flex;
-   flex-wrap: nowrap;
-   flex-direction: row;
-   min-width: 25%;
-justify-content: space-around;
-margin-bottom: 5%;
-top: 2677px;
- }
- .div7a{
-    display:flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   max-width: fit-content;
-justify-content: space-around;
+  .div7 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    min-width: 25%;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    top: 2677px;
+}
 
-margin-left: 5%;
-margin-right: 5%;
- }
-
-.div8{
+.div7a {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    flex-direction: column;
+    max-width: fit-content;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.div8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: rgba(231, 231, 231, 1);
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.div8a{
-    display: flex;
-    justify-content:space-between;
-    margin-left: 40px;
-margin-right: 50px;
-background-color: rgba(231, 231, 231, 1);
 
+.div8a {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 50px;
+    background-color: rgba(231, 231, 231, 1);
 }
-.div9{
+
+.div9 {
     display: flex;
     flex-wrap: wrap;
     flex-shrink: auto;
     flex-grow: auto;
-    width:100%;
-    justify-content:space-between;
+    width: 100%;
+    justify-content: space-between;
     background-color: rgba(35, 35, 35, 1);
     padding-top: 1%;
     padding-bottom: 1%;
-
 }
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .div7 {
+        flex-grow:1;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .div7a {
+        margin: 50px;
+          
+    }
+    .div8a {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
 
 .div5a1 {
     filter: grayscale(100%)
