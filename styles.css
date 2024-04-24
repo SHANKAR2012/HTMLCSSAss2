@@ -346,6 +346,7 @@ a {
 
 
 
+
 @media only screen and (min-width: 550px) and (max-width:842px) {
     .content-item {
         grid-template-areas: "e1 e2"
@@ -442,15 +443,18 @@ a {
     height: auto;
   }
 
-  /* Media queries for responsiveness */
-  @media screen and (max-width: 768px) {
-    .div7 {
-      flex-direction: column;
-    }
-  }
+  @media only screen and (max-width:780px) {
+   
+    
+   .div7A{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    justify-content: space-around;
+   }
 
-  @media screen and (max-width: 480px) {
-    .div7a {
-      flex-basis: 100%;
-    }
-  }
+   
+}
+
+
